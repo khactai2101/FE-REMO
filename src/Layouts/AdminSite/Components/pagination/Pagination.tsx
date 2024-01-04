@@ -28,6 +28,7 @@ const Pagination: React.FC<any> = (props) => {
             key={pageNumber}
             variant={pageNumber === currentPage ? "outlined" : "text"}
             size="sm"
+            placeholder={pageNumber} // Include the placeholder property
             onClick={() => handlePageChange(pageNumber)}
           >
             {pageNumber}
